@@ -2,6 +2,7 @@
 
 
 # 📒 Resumo do projeto
+
 Projeto em andamento, visando a prática com a linguagem JavaScript e Html.
 
 ## ✔️ Técnicas e tecnologias utilizadas
