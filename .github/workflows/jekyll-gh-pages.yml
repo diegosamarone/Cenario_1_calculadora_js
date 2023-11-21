@@ -36,8 +36,7 @@ jobs:
         run: npm install
       - name: Run Test
         run: npm test
-
-        
+ 
   # Build job
   build:
     runs-on: ubuntu-latest
