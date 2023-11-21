@@ -22,6 +22,22 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  #npm_test
+  npm_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: Install Depedencies
+        run: npm install
+      - name: Run Test
+        run: npm test
+
+        
   # Build job
   build:
     runs-on: ubuntu-latest
@@ -38,6 +54,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
+        
   # Deployment job
   deploy:
     environment:
