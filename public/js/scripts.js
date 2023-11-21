@@ -72,8 +72,6 @@ module.exports = {insert, clean, back, calcular}
 
 
 
-
-
 /* - - - - - - - - - - - - Funções Adicionais - - - - - - - - - - - - */
 
 function processar_digito(num, numeros_digitados) {
